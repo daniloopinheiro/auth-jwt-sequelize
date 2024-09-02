@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+
+  postgres:
+    image: postgres:latest
+    hostname: postgres
+    environment:
+      POSTGRES_DB: dbAuth
+      POSTGRES_USER: auth
+      POSTGRES_PASSWORD: auth
+    ports:
+      - "5432:5432"
